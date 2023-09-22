@@ -1,6 +1,6 @@
 import styles from './MyLayout.module.css'
 import React from 'react';
-import { DashboardOutlined } from '@ant-design/icons';
+import { DashboardOutlined, MenuFoldOutlined } from '@ant-design/icons';
 import { Layout, Menu, theme, Avatar } from 'antd';
 import logoImage from '../../assets/logoTiflux.png';
 import loginAvatar from '../../assets/loginAvatar.png'
@@ -26,7 +26,8 @@ const MyLayout = () => {
               console.log(collapsed, type);
             }}
             style={{
-              backgroundColor: '#03363d'
+              backgroundColor: '#03363d',
+              position: 'relative'
             }}
           >
             <div className={styles.logo}>
@@ -35,7 +36,8 @@ const MyLayout = () => {
             <Menu
               style={{
                 backgroundColor: 'transparent', 
-                color: 'white'}}
+                color: 'white'
+              }}
               mode="inline"
               defaultSelectedKeys={['']}
             >
@@ -43,6 +45,10 @@ const MyLayout = () => {
                 <Link to='/'>Dashboard</Link>
               </Menu.Item>
             </Menu>
+            <div className={styles.footerSider}>
+              <div className={styles.footerSiderLine}></div>
+              <Link to='/'><MenuFoldOutlined className={styles.footerSiderIcon}/></Link>
+            </div>
           </Sider>
           <Layout>
             <Header className={styles.header}
