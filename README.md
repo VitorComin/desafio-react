@@ -79,5 +79,10 @@ Para voltar a página inicial, os itens do canto superior esquerdo da tela, no c
 
 ![image](https://github.com/VitorComin/desafio-react/assets/106283734/8fb42307-d9fd-4e12-8473-f92c8702bb08)
 
+Também, no canto inferior esquerdo da página, temos um icone que, ao clicar, leva para o caminho "/", servindo como uma opção de voltar para a tela inicial. Esse icone aparece na parte de baixo do menu sider nas duas páginas.
+
+![image](https://github.com/VitorComin/desafio-react/assets/106283734/dbe6d58b-4ca5-4eed-bfdd-edf2ab76dc00)
+
+
 
 
