@@ -71,7 +71,7 @@ As ferramentas de search funcionam pesquisando sempre pela primeira coluna da ta
 
 ![image](https://github.com/VitorComin/desafio-react/assets/106283734/66cb366e-7df3-44d8-8ca9-098127a97d20)
 
-No canto superior direito da tela, onde aparece o avatar do usuário e o "User" há um link que te leva ao caminho "/login", que troca o content da aplicação por outra página, onde coloquei inputs de username, senha e um botao para enviar, simulando um login. O foco de fazer essa página é aproveitar esse avatar e "User" que já era proposto pro canto superior da tela para mostrar o React Router, sem alterar a proposta originial, não alterando o menu e afins.
+No canto superior direito da tela, onde aparece o avatar do usuário e o "User", há um link que te leva ao caminho "/login", que troca o content da aplicação por outra página, onde coloquei inputs de username, senha e um botao para enviar, simulando um login. O foco de fazer essa página é aproveitar esse avatar e "User" que já era proposto pro canto superior da tela para mostrar o React Router, sem alterar a proposta originial, não alterando o menu e afins.
 
 ![image](https://github.com/VitorComin/desafio-react/assets/106283734/a0d19150-640a-4989-9479-f9d4b1f9e027)
 
