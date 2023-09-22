@@ -1,0 +1,29 @@
+.containerTables {
+    margin-top: 24px;
+    background-color: white;
+    width: 100%;
+}
+
+.headerTables {
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: lightgray;
+}
+
+.myTabelas {
+    padding: 20px;
+}
+
+.spin {
+    color: black;
+    padding-left: 50%;
+}
