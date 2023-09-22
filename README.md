@@ -55,7 +55,7 @@ Antes de começar, certifique-se de ter o Node.js e o npm (ou yarn) instalados e
 
 ## A Aplicação
 
-A aplicação consiste em uma aplicação WEB que apresenta os dados da API do Starwars por meio de um dashboard com estatísticas e tabelas, usando a biblíoteca ANTD.
+A aplicação consiste em uma aplicação Web que apresenta os dados da API do Starwars por meio de um dashboard com estatísticas e tabelas, usando a biblioteca ANTD.
 
 ![image](https://github.com/VitorComin/desafio-react/assets/106283734/ffe47c89-90d1-4133-8e72-d9dd90450baa)
 
