@@ -5,7 +5,6 @@ import { useState, useEffect } from "react";
 import { fetchPeople, fetchFilms, fetchVeiculos } from '../../services/Service.js'
 import { LoadingOutlined } from '@ant-design/icons';
 import { Spin } from 'antd';
-import { format, parseISO } from 'date-fns';
 
 const { Search } = Input;
 
@@ -36,7 +35,7 @@ function MyTables() {
       async function fetchDataFromAPI() {
           try {
               const people = await fetchPeople();
-              setPeopleData(people.results);
+              setPeopleData(people);
               setLoadingPeople(false);
 
               const films = await fetchFilms();
@@ -44,7 +43,7 @@ function MyTables() {
               setLoadingFilms(false);
 
               const veiculos = await fetchVeiculos();
-              setVeiculosData(veiculos.results);
+              setVeiculosData(veiculos);
               setLoadingVeiculos(false);
               
           } catch (error) {
@@ -196,6 +195,9 @@ function MyTables() {
                                 body: {},
                             }}
                             rowKey="key"
+                            pagination={{
+                              pageSize: 5,
+                            }}
                             columns={columnsPeople}
                             dataSource={searchedPeopleData.length > 0 ? searchedPeopleData : peopleData}
                         />
@@ -217,6 +219,9 @@ function MyTables() {
                                 body: {},
                             }}
                             rowKey="key"
+                            pagination={{
+                              pageSize: 5,
+                            }}
                             columns={columnsVeiculos}
                             dataSource={searchedVeiculosData.length > 0 ? searchedVeiculosData : veiculosData}
                         />
@@ -238,6 +243,9 @@ function MyTables() {
                                 body: {},
                             }}
                             rowKey="key"
+                            pagination={{
+                              pageSize: 5,
+                            }}
                             columns={columnsFilms}
                             dataSource={searchedFilmsData.length > 0 ? searchedFilmsData : filmsData}
                         />

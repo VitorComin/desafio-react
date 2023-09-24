@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Col, Row, Statistic } from "antd";
 import styles from "./MyStatistics.module.css";
-import { fetchPeople, fetchFilms, fetchPlanets, fetchNaves } from "../../services/Service.js";
+import { fetchPeopleCount, fetchFilmsCount, fetchPlanetsCount, fetchNavesCount } from "../../services/Service.js";
 import { LoadingOutlined } from '@ant-design/icons';
 import { Spin } from 'antd';
 
@@ -28,19 +28,19 @@ function MyStatistics() {
   useEffect(() => {
     async function fetchDataFromAPI() {
       try {
-        const people = await fetchPeople();
+        const people = await fetchPeopleCount();
         setPeopleData(people);
         setLoadingPeople(false);
 
-        const films = await fetchFilms();
+        const films = await fetchFilmsCount();
         setFilmsData(films);
         setLoadingFilms(false);
 
-        const planets = await fetchPlanets();
+        const planets = await fetchPlanetsCount();
         setPlanetsData(planets);
         setLoadingPlanets(false);
 
-        const naves = await fetchNaves();
+        const naves = await fetchNavesCount();
         setNavesData(naves);
         setLoadingNaves(false);
       } catch (error) {
@@ -59,7 +59,7 @@ function MyStatistics() {
             {loadingPeople ? (
                 <Spin className={styles.spin} indicator={antIcon} />
             ) : (
-                <Statistic title="Pessoas" value={peopleData.count} />
+                <Statistic title="Pessoas" value={peopleData} />
             )}
           </Col>
         </Row>
@@ -70,7 +70,7 @@ function MyStatistics() {
             {loadingPlanets ? (
                 <Spin className={styles.spin} indicator={antIcon} />
             ) : (
-                <Statistic title="Planetas" value={planetsData.count} />
+                <Statistic title="Planetas" value={planetsData} />
             )}
           </Col>
         </Row>
@@ -81,7 +81,7 @@ function MyStatistics() {
             {loadingFilms ? (
                 <Spin className={styles.spin} indicator={antIcon} />
             ) : (
-                <Statistic title="Filmes" value={filmsData.count} />
+                <Statistic title="Filmes" value={filmsData} />
             )}
           </Col>
         </Row>
@@ -92,7 +92,7 @@ function MyStatistics() {
             {loadingNaves ? (
                 <Spin className={styles.spin} indicator={antIcon} />
             ) : (
-                <Statistic title="Espaço naves" value={navesData.count} />
+                <Statistic title="Espaço naves" value={navesData} />
             )}
           </Col>
         </Row>
