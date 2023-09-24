@@ -73,7 +73,7 @@ As ferramentas de search funcionam pesquisando sempre pela primeira coluna da ta
 
 No canto superior direito da tela, onde aparece o avatar do usuário e o "User", há um link que te leva ao caminho "/login", que troca o content da aplicação por outra página, onde coloquei inputs de username, senha e um botao para enviar, simulando um login. O foco de fazer essa página é aproveitar esse avatar e "User" que já era proposto pro canto superior da tela para mostrar o React Router, sem alterar a proposta originial, não alterando o menu e afins.
 
-![image](https://github.com/VitorComin/desafio-react/assets/106283734/8eef419b-e525-4c3d-bad0-67d271336914)
+![image](https://github.com/VitorComin/desafio-react/assets/106283734/f1d0bd81-f33f-4567-b629-90b58806a410)
 
 Para voltar a página inicial, os itens do canto superior esquerdo da tela, no caso o logo da Tiflux e a opção Dashboard do menu, estão dentro de um Link também, que direcionam ao caminho "/", que é a página inicial, onde se encontram os dashboards.
 
@@ -81,7 +81,8 @@ Para voltar a página inicial, os itens do canto superior esquerdo da tela, no c
 
 Também, no canto inferior esquerdo da página, temos um icone que, ao clicar, leva para o caminho "/", servindo como uma opção de voltar para a tela inicial. Esse icone aparece na parte de baixo do menu sider nas duas páginas.
 
-![image](https://github.com/VitorComin/desafio-react/assets/106283734/67dbfe9b-4d13-427e-a7aa-2e5d13f1acbe)
+![image](https://github.com/VitorComin/desafio-react/assets/106283734/bbd8d16e-0c07-4892-9a28-4adefc3f28a7)
+
 
 
 
